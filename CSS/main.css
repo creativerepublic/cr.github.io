@@ -1,0 +1,39 @@
+@font-face{
+    font-family: "SF New Republic";
+    src: url("/fonts/SF New Republic.ttf");
+    src: url("/fonts/SF New Republic Bold.ttf");
+    src: url("/fonts/SF New Republic Italic.ttf");
+}
+body{
+  background: #C42330;
+  font-family: SF New Republic, sans-serif;
+  color: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 0.5fr;
+}
+.header{
+  font-style: normal;
+  background: white;
+  color: black;
+  height:
+}
+.main{
+  font-style: Bold;
+}
+.main h1{
+  padding-top: 0.3em;
+  text-align: center;
+}
+.footer{
+  font-style: italic;
+  background: #2d2d2d;
+}
