@@ -17,3 +17,50 @@
 a.menu{
   margin-top: 0.7em;
 }
+.topnav{
+  height: 100%;
+}
+#header{
+  background: white;
+}
+.topnav a:not(:first-child) {
+  display: none;
+}
+.topnav a.icon {
+    margin-top: 1.25em;
+    float: right;
+    display: block;
+    color: var(--CR-red);
+    padding: 3px;
+    border-radius: 6px;
+  }
+.topnav.responsive {
+}
+.topnav.responsive .icon {
+      color: white;
+      background-color: var(--CR-red);
+      padding: 3px;
+      border-radius: 6px;
+    }
+.topnav.responsive a.menu {
+      display: block;
+      position: relative;
+      left:2em;
+  	  width:100vw;
+      text-align: right;
+      border-radius: 0;
+      margin-top: 0;
+      margin-left: 100em;
+      background-color: var(--CR-black);
+      color: white;
+    }
+
+.about1{
+      background-position: 0 17vw;
+      height: 30vw;
+      padding-top: 12vh;
+    }
+
+.about5{
+  background-position: 10vw 80vw;
+}

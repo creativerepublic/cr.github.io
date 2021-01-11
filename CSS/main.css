@@ -266,7 +266,7 @@ a.menu:hover{
   background-image: url('/Imgs/about3.jpg');
   background-color: white;
   background-position: 0, 0;
-  height: 130vh;
+  height: 55vw;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -274,42 +274,50 @@ a.menu:hover{
   margin: 0;
 }
 .af{
-  padding-top: 3em;
+  /* padding-top: 3em;
   font-size: 8em;
-  padding-left: 8.69em;
+  padding-left: 8.69em; */
+  padding-top: 15vw;
+  font-size: 8vw;
+  padding-left: 58vw;
   /* background: gray; */
 }
 .ag{
   margin: 0;
-  font-size: 15em;
-  letter-spacing: 0.05em;
-  padding-left: 4.65em;
+  /* font-size: 15em;
+  padding-left: 4.65em; */
+  font-size: 12.5vw;
+  padding-left: 58vw;
   -webkit-text-stroke-width: 0.1em;
+  letter-spacing: 0.05em;
   /* background: green; */
   position: relative;
-  top: -0.35em;
+  top: -4.3vw;
 }
 .ah{
-  font-size: 8em;
-  padding-left: 11.5em;
+  /* font-size: 8em;
+  padding-left: 11.5em; */
+  font-size: 6.5vw;
+  padding-left: 77vw;
   position: relative;
   top: -1.35em;
 }
 .ai{
   font-family: "Roboto";
   position: relative;
-  top: -10em;
+  /* top: -10em; */top: -10vw;
   font-size: 1.3em;
   font-weight: 550;
-  padding-left: 63em;
+  /* padding-left: 63em; */
+  padding-left: 70vw;
   color: var(--CR-black);
 }
 
 .about4{
   background-image: url('/Imgs/about4.jpg');
-  height: 130vh;
-  background-position: 0 9em;
-  /* background-size: cover; */
+  height: 55vw;
+  background-position: 0 2vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--CR-red);
 }
@@ -318,20 +326,19 @@ a.menu:hover{
   color: white;
   font-size: 1.3em;
   font-weight: 550;
-  padding-top: 30em;
-  padding-left: 63em;
+  padding-top: 30vw;
+  padding-left: 68vw;
   height: 100%;
 }
 
 .about5{
-  /* background-image: url('/Imgs/about5.jpg'); */
   background-image: url('/Imgs/about5.png');
   background-color: var(--CR-black);
-  height: 100vh;
+  height: 55vw;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position: 43% 30%;
+  background-position: 10vw center;
 }
 
 body.contact-body{

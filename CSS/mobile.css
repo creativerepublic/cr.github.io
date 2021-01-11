@@ -68,18 +68,57 @@
   padding-top: 2em;
 }
 .about2{
-  height: 45vh;
+  height: 100vw;
 }
 .ab{
-  padding-top: 12vw;
+  padding-top: 5vw;
+  padding-left: 2vw;
+}
+.ac{
+  padding-left: 50vw;
 }
 .ad{
   font-size: 3vw;
   padding-left: 35vw;
-  padding-top: 13vw;
+  padding-top: 45vw;
 }
 .ae{
   width: 60vw;
   font-size: 3vw;
   padding-left: 35vw;
+}
+.about3{
+  background-position:  -7vw 29vw;
+  background-size: 180% auto;
+  height: 180vw;
+}
+.af{
+  padding-top: 85vw;
+  padding-left: 5vw;
+}
+.ag{
+  padding-left: 5vw;
+  font-size: 30vw;
+}
+.ah{
+  padding-left: 65vw;
+  font-size: 8.5vw;
+  top:-1.5em;
+}
+.ai{
+  padding-left: 5vw;
+}
+.about4{
+  height: 100vw;
+  background-position: -30vw 2vw;
+}
+.aj{
+  padding-top: 75vw;
+  padding-left: 55vw;
+}
+.about5{
+  height: 45vh;
+  /* background-position: 2vw 120vw; */
+  background-position: center 100vw;
+  background-size: 120%;
 }

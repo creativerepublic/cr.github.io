@@ -18,5 +18,10 @@ a.menu{
 }
 .about1{
   background-position: 0 17vw;
-  height: 50vw;
+  height: 35vw;
+  padding-top: 15vh;
+}
+
+.about5{
+  background-position: 10vw 80vw;
 }
