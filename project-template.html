@@ -4,19 +4,25 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="Imgs/logo_icon.ico"/>
     <title>Creative Republic UG</title>
+    <script src="https://kit.fontawesome.com/ee0262a05a.js"></script>
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:1080px) and (min-width:800px)"  href="CSS/halfscreen.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:800px) and (min-width:540px)"  href="CSS/tablet.css"/>
+    <link rel="stylesheet" type="text/css" media="(max-width:540px)" href="CSS/mobile.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <main>
       <div id="header">
-        <div class="topnav" >
+        <div class="topnav" id="myTopnav" >
                     <a href="index.html" class="logo" ><img src="Imgs/CR logo.png" alt=""></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fas fa-bars" style="font-size:2em"></i>
+                    </a>
                     <a href="contact.html" class="menu">Contact</a>
                     <a href="about.html" class="menu">About Us</a>
                     <a href="index.html" class="menu">Our Work</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-						<i class="fas fa-ellipsis-h"></i>
-                    </a>
                 </div>
       </div>
       <div class="header-separator">
@@ -35,5 +41,15 @@
         <a class="copyright">&#00169; <script>document.write(new Date().getFullYear())</script> Copyright Frontier Media Group</a>
       </div>
     </main>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+                x.className = "topnav";
+               }
+            }
+    </script>
   </body>
 </html>

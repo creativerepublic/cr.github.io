@@ -45,7 +45,7 @@ a.menu{
 .topnav.responsive a.menu {
       display: block;
       position: relative;
-      left:2em;
+      left:2.5em;
   	  width:100vw;
       text-align: right;
       border-radius: 0;
@@ -63,4 +63,24 @@ a.menu{
 
 .about5{
   background-position: 10vw 80vw;
+}
+.contact{
+  padding-top: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#mapDiv{
+  width: 60vw;
+  height: 60vw;
+  border-radius: 15px;
+  position: relative;
+  top:-20vw;
+  left:20vw;
+}
+.contact-info{
+  top:2em;
+  padding-left: 0;
+  text-align: center;
+  width: 100vw;
+  height: 35vw;
 }

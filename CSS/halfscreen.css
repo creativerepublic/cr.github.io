@@ -25,3 +25,27 @@ a.menu{
 .about5{
   background-position: 10vw 80vw;
 }
+#main-contact h1{
+  margin: 0;
+}
+.contact{
+  padding-top: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#mapDiv{
+  width: 60vw;
+  height: 60vw;
+  border-radius: 15px;
+  position: relative;
+  top:-17vw;
+  left:20vw;
+}
+.contact-info{
+  top:2em;
+  padding-left: 0;
+  text-align: center;
+  width: 100vw;
+  height: 55vw;
+  font-size: 4vw;
+}

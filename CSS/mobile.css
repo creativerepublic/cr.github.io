@@ -42,7 +42,8 @@
 .topnav.responsive a.menu {
       display: block;
       position: relative;
-      left:2em;
+      left:2.5em;
+      padding-right: 1em;
   	  width:100vw;
       text-align: right;
       border-radius: 0;
@@ -119,6 +120,27 @@
 .about5{
   height: 45vh;
   /* background-position: 2vw 120vw; */
-  background-position: center 100vw;
+  background-position: center 105vw;
   background-size: 120%;
+}
+.contact{
+  padding-top: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#mapDiv{
+  width: 60vw;
+  height: 60vw;
+  border-radius: 15px;
+  position: relative;
+  top:-7vw;
+  left:20vw;
+}
+.contact-info{
+  top:2em;
+  padding-left: 0;
+  text-align: center;
+  width: 100vw;
+  height: 55vw;
+  font-size: 5vw;
 }
