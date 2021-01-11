@@ -1,0 +1,19 @@
+.content{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.workImg{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.logo img{
+  height: 5em;
+}
+.header-separator{
+  background: white;
+  height:6em;
+}
+a.menu{
+  margin-top: 0.7em;
+}

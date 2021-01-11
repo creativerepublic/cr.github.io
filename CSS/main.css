@@ -1,10 +1,16 @@
 :root{
   --CR-red:#C42330;
-  --CR-black:#2d2d2d;
+  --CR-black:#231F20;
 }
 @font-face{
     font-family: "SF New Republic";
     src: url("/fonts/SF New Republic.ttf");
+    font-family: "SF New Republic Bold";
+    src: url("/fonts/SF New Republic Bold.ttf");
+    font-family: "SF New Republic Bold Alt";
+    src: url("/fonts/SF New Republic SC Bold.ttf");
+    font-family: "Roboto";
+    src: url("/fonts/Roboto.ttf");
 }
 body{
   margin: 0;
@@ -18,19 +24,36 @@ main{
   height: 100%;
   width: 100%;
 }
-#header{
+/* #header{
   font-style: normal;
   background: white;
   color: black;
+} */
+
+#header{
+  font-style: normal;
+  color: black;
+  position: fixed;
+  top:0;
+  z-index: 99;
+  background-color: none;
+  width: 100vw;
 }
+
+
 #main{
   margin: 0;
+  overflow: hidden;
 }
 #main h1{
   margin: 0.3em;
   font-style: Bold;
   text-align: center;
 }
+.topnav .icon{
+    display: none;
+}
+
 .content{
   width: 100%;
   height: 100%;
@@ -55,7 +78,24 @@ main{
   height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
   overflow: hidden;
+}
+.box figure:hover figcaption{
+  opacity: 1;
+  top: 78%;
+  background: var(--CR-red);
+  transition: 1s;
+  /* background: rgba(15,15,15,0.3); */
+}
+.box figcaption{
+  position: absolute;
+  /* left: 0; */
+  bottom: 0;
+  top:0;
+  width: 100%;
+  opacity: 0;
+  background: rgba(15,15,15,0.3);
 }
 .workImg{
   height: 100%;
@@ -64,7 +104,7 @@ main{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.workImg:hover{
+.box figure:hover .workImg{
   transform: scale(1.2);
   transform-origin: 50% 50%;
   transition: 0.4s;
@@ -72,6 +112,14 @@ main{
   filter: grayscale(0%);
 }
 
+.project-title{
+  margin: 0;
+}
+
+.project-title h3{
+  color: white;
+  transform: translate(1em, 0px);
+}
 
 
 
@@ -89,10 +137,14 @@ main{
 
 .logo img{
   height: 7em;
+  background-color: white;
+  border-radius: 220px;
 }
 .topnav{
   margin: 0.3em;
-  padding-right: 1em;
+  padding-right: 3em;
+  padding-left: 0.5em;
+  padding-top: 0.2em;
 }
 a.menu{
   margin-top: 1.7em;
@@ -101,15 +153,19 @@ a.menu{
   padding: 0.5em;
   float: right;
   color: var(--CR-black);
+  background-color: white;
+  border-radius: 30px;
 }
 a.menu:hover{
   transition: 0.4s;
   color:white;
   font-weight: 1000;
   background: var(--CR-red);
-  border-radius: 30px;
 }
-
+.header-separator{
+  background: white;
+  height:8em;
+}
 #fb-logo, #twitter-logo, #ig-logo{
     width: 20px;
     height: 20px;
@@ -125,4 +181,206 @@ a.menu:hover{
   padding-top: 0.25em;
   position: relative;
   float: left;
+}
+
+
+
+.about1{
+  background-image: url('/Imgs/about1.jpg');
+  height: 63vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 1vw;
+  background-size: 100vw;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  grid-template-rows: 0.01fr 1fr;
+  /* padding-top: 1.45em;
+  font-size: 8.8em; */
+  padding-top: 20vh;
+  font-size: 8vw;
+}
+.tag1{
+  text-align: right;
+  /* background: rgba(0,256,0,0.5); */
+
+}
+.tag2{
+  color: var(--CR-red);
+  /* background: rgba(256,0,0,0.5); */
+}
+.aa{
+  font-family: "Roboto";
+  font-size: 15%;
+  /* background: rgba(0,0,256,0.5); */
+}
+
+.about2{
+  background-image: url('/Imgs/about2.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
+  /* height: 110vh; */
+  height: 55vw;
+}
+.ab{
+  /* position: absolute; */
+  font-weight: 1000;
+  font-size: 6vw;
+  width: 100%;
+  /* background: green; */
+  padding-top: 3em;
+  padding-left: 38vw;
+}
+.ac{
+  /* position: absolute; */
+  font-size: 5vw;
+  width: 100%;
+  padding-left: 45vw;
+  /* background: blue; */
+}
+.ad{
+  /* position: absolute; */
+  font-family: "Roboto";
+  font-weight: 1000;
+  /* font-size: 1.5em;
+  width: 100%;
+  padding-left: 43em; */
+  font-size: 1.5vw;
+  width: 100%;
+  padding-left: 53vw;
+  /* background: green; */
+}
+.ae{
+  width: 100%;
+  font-family: "Roboto";
+  /* font-size: 1.1em;
+  padding-top: 1em;
+  padding-left: 58.5em; */
+  font-size: 1.1vw;
+  padding-top: 1em;
+  padding-left: 53vw;
+}
+
+.about3{
+  /* background-image: url('/Imgs/about3.png'); */
+  background-image: url('/Imgs/about3.jpg');
+  background-color: white;
+  background-position: 0, 0;
+  height: 130vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--CR-red);
+  margin: 0;
+}
+.af{
+  padding-top: 3em;
+  font-size: 8em;
+  padding-left: 8.69em;
+  /* background: gray; */
+}
+.ag{
+  margin: 0;
+  font-size: 15em;
+  letter-spacing: 0.05em;
+  padding-left: 4.65em;
+  -webkit-text-stroke-width: 0.1em;
+  /* background: green; */
+  position: relative;
+  top: -0.35em;
+}
+.ah{
+  font-size: 8em;
+  padding-left: 11.5em;
+  position: relative;
+  top: -1.35em;
+}
+.ai{
+  font-family: "Roboto";
+  position: relative;
+  top: -10em;
+  font-size: 1.3em;
+  font-weight: 550;
+  padding-left: 63em;
+  color: var(--CR-black);
+}
+
+.about4{
+  background-image: url('/Imgs/about4.jpg');
+  height: 130vh;
+  background-position: 0 9em;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-color: var(--CR-red);
+}
+.aj{
+  font-family: "Roboto";
+  color: white;
+  font-size: 1.3em;
+  font-weight: 550;
+  padding-top: 30em;
+  padding-left: 63em;
+  height: 100%;
+}
+
+.about5{
+  /* background-image: url('/Imgs/about5.jpg'); */
+  background-image: url('/Imgs/about5.png');
+  background-color: var(--CR-black);
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 43% 30%;
+}
+
+body.contact-body{
+  background-image: url('/Imgs/office.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+#main-contact{
+
+  /* background-attachment: relative; */
+  overflow: hidden;
+
+  margin: 0;
+  width: 100%;
+}
+#main-contact h1{
+  /* color: var(--CR-black); */
+  color: white;
+  margin: 0.3em;
+  font-style: Bold;
+  text-align: center;
+}
+.contact{
+  padding-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+}
+.contact-info{
+  font-family: "Roboto";
+  font-size: 1.8em;
+  background: var(--CR-red);
+  position: relative;
+  top:30%;
+  width: 100%;
+  height: 40%;
+  padding-left: 10em;
+  padding-top: 0.5em;
+  line-height: 1.6;
+}
+.contact-info a{
+  color: white;
+}
+#mapDiv{
+  width: 480px;
+  height: 520px;
+  border-radius: 15px;
+  position: relative;
+  /* left:100em; */
 }

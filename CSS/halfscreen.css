@@ -1,0 +1,22 @@
+.content{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.workImg{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.logo img{
+  height: 6em;
+}
+.header-separator{
+  background: white;
+  height:7em;
+}
+a.menu{
+  margin-top: 1em;
+}
+.about1{
+  background-position: 0 17vw;
+  height: 50vw;
+}
