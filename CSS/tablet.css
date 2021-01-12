@@ -19,6 +19,7 @@ a.menu{
 }
 .topnav{
   height: 100%;
+  width: 100vw;
 }
 #header{
   background: white;
@@ -28,6 +29,7 @@ a.menu{
 }
 .topnav a.icon {
     margin-top: 1.25em;
+    margin-right: 1.5em;
     float: right;
     display: block;
     color: var(--CR-red);
@@ -45,7 +47,8 @@ a.menu{
 .topnav.responsive a.menu {
       display: block;
       position: relative;
-      left:2.5em;
+      /* left:2.5em; */
+      padding-right: 1em;
   	  width:100vw;
       text-align: right;
       border-radius: 0;

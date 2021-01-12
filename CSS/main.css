@@ -300,7 +300,8 @@ a.menu:hover{
   font-size: 6.5vw;
   padding-left: 77vw;
   position: relative;
-  top: -1.35em;
+  /* top: -1.35em; */
+  top: -9vw;
 }
 .ai{
   font-family: "Roboto";

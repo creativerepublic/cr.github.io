@@ -16,6 +16,7 @@
 }
 .topnav{
   height: 100%;
+  width: 100vw;
 }
 #header{
   background: white;
@@ -25,6 +26,7 @@
 }
 .topnav a.icon {
     margin-top: 1.25em;
+    margin-right: 1.5em;
     float: right;
     display: block;
     color: var(--CR-red);
@@ -42,7 +44,7 @@
 .topnav.responsive a.menu {
       display: block;
       position: relative;
-      left:2.5em;
+      /* left:2.5em; */
       padding-right: 1em;
   	  width:100vw;
       text-align: right;
@@ -104,7 +106,7 @@
 .ah{
   padding-left: 65vw;
   font-size: 8.5vw;
-  top:-1.5em;
+  /* top:-1.5em; */
 }
 .ai{
   padding-left: 5vw;
