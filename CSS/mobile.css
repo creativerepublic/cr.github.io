@@ -1,4 +1,4 @@
-.content{
+.index-content{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -6,6 +6,12 @@
 .workImg{
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+.box figure:hover figcaption{
+  top:60%;
+}
+.project-title h3{
+  font-size: 1em;
 }
 .logo img{
   height: 5em;
@@ -120,10 +126,9 @@
   padding-left: 55vw;
 }
 .about5{
-  height: 45vh;
-  /* background-position: 2vw 120vw; */
-  background-position: center 95vw;
+  height: 50vh;
   background-size: 120%;
+  background-position: 50% 85%;
 }
 .contact{
   padding-top: 0;
@@ -148,4 +153,29 @@
 }
 .site{
 background-position: center 12vw;
+}
+.modal-content{
+  top: 20vh;
+}
+.project-content{
+  grid-template-columns: [c1] 1fr [c2] 1fr [c3];
+  grid-template-rows:[r1] 0.5fr [r2] 1fr [r3] ;
+}
+.project-header{
+  /* background: red; */
+  grid-column: c1/c3;
+  grid-row: r1;
+}
+.project-description{
+  grid-column: c1/c3;
+  grid-row: r2;
+}
+.project-gallery{
+  grid-column: c1/c3;
+  grid-row: r3;
+}
+.column{
+  width:33%;
+  height: 20vh;
+  overflow: hidden;
 }

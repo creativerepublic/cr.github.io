@@ -1,4 +1,4 @@
-.content{
+.index-content{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -6,6 +6,9 @@
 .workImg{
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+.box figure:hover figcaption{
+  top:60%;
 }
 .logo img{
   height: 5em;
@@ -65,7 +68,7 @@ a.menu{
     }
 
 .about5{
-  background-position: 10vw 80vw;
+  background-position: 50% 90%;
 }
 .contact{
   padding-top: 0;
@@ -86,4 +89,19 @@ a.menu{
   text-align: center;
   width: 100vw;
   height: 35vw;
+}
+.modal-content{
+  top: 20vh;
+}
+.project-header{
+  grid-column: c1/c3;
+  grid-row: r1;
+}
+.project-description{
+  grid-column: c1/c3;
+  grid-row: r2;
+}
+.project-gallery{
+  grid-column: c1/c3;
+  grid-row: r3;
 }
