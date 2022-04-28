@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Creative, Republic, #livecreative">
+    <meta name="description" content="Online showcase of Creative Republic UG portfolio">
+    <meta name="author" content="Creative Republic UG">
+    <title>Creative Republic UG -Testsite</title>
+    <link rel="stylesheet" type="text/css" href="CSS/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/logos.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/display.css"/>
+    <link rel="stylesheet" type="text/css" media="(max-width:540px)" href="CSS/mobile.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <label class="toggle" >
+      <input type="checkbox" id="menu_switch"/>
+      <span class="slider"></span>
+    </label>
+
+    <div class="MenuBar">
+      <div class="topnav">
+        <a href="/work.html" class="menu">Our Work</a>
+        <a href="/about.html" class="menu active">About Us</a>
+        <a href="/contact.html" class="menu">Contact</a>
+      </div>
+      <a href="/index.html" class="menu"><img class="CR_logo" src="Imgs/CR_logo.svg" alt=""></a>
+    </div>
+    <div class="MainBar">
+      <div class="content2">
+        <div class="box2 who">
+          <div class="centerDiv">
+            <!-- <img class="CR_fish" src="Imgs/CR_fish.png" alt=""> -->
+            <img class="CR_guy" src="Imgs/yell_guy_wave.png" alt="">
+            <img class="hashtag" src="Imgs/hashtag.svg" alt="">
+            <img class="hashtag_m" src="Imgs/hashtag_m.svg" alt="">
+            <!-- <img class="who_text" src="Imgs/who_text.svg" alt="">
+            <img class="who_text_m" src="Imgs/who_text_m.svg" alt=""> -->
+            <div class="who_copy">
+              <p>We are a multimedia agency based in Kampala, Uganda and over the past 8 years we have had the privilege of working closely with some of the biggest brands and organizations in Uganda and beyond.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box2 how">
+          <div class="centerDiv">
+            <img class="how_text1" src="Imgs/how_text1.svg" alt="">
+            <img class="how_text1_m" src="Imgs/how_text1_m.svg" alt="">
+            <img class="how_text2" src="Imgs/how_text2.svg" alt="">
+            <img class="how_text3" src="Imgs/how_text3.svg" alt="">
+            <img class="how_text3_m" src="Imgs/how_text3_m.svg" alt="">
+            <img class="how_bg" src="/Imgs/how_bg.svg" alt="">
+          </div>
+        </div>
+        <div class="box2 why">
+          <div class="centerDiv">
+            <img class="why_text1" src="Imgs/why_text1.svg" alt="">
+            <img class="why_text2" src="Imgs/why_text2.svg" alt="">
+            <img class="why_text2_m" src="Imgs/why_text2_m.svg" alt="">
+            <img class="why_bg" src="/Imgs/why_bg.svg" alt="">
+          </div>
+
+        </div>
+        <div class="box2 what">
+          <div class="centerDiv">
+            <img class="what_bg" src="/Imgs/what_bg.svg" alt="">
+            <img class="what_bg_m" src="/Imgs/what_bg_m.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="SideBar">
+
+      <div id="myBtnContainer">
+          <label class="btn active" onclick="filterSelection('who')">
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+            Who are we?</label>
+          <label class="btn" onclick="filterSelection('how')">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            Our philosophy</label>
+          <label class="btn" onclick="filterSelection('why')">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            Why us?</label>
+          <label class="btn" onclick="filterSelection('what')">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            What we do </label>
+      </div>
+
+      <img class="copyright" src="Imgs/copyright.svg" alt="">
+      <a href="https://www.instagram.com/creativerepublicug" target="_blank"><img class="ig-logo" src="Imgs/ig-logo.png" alt=""></a>
+      <a href="https://www.twitter.com/creativerepUG" target="_blank"><img class="twitter-logo" src="Imgs/twitter-logo.png" alt=""></a>
+      <a href="https://www.facebook.com/CreativeRepublicUG" target="_blank"><img class="fb-logo" src="Imgs/fb-logo.png" alt=""></a>
+      <a href="https://www.youtube.com/channel/UCTvfo23HNkZ_uptEZHQwuRg" target="_blank"><img class="ytube-logo" src="Imgs/ytube-logo.png" alt=""></a>
+    </div>
+
+
+    <script>
+			filterSelection("who")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("box2");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+        var current =btnContainer.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			  });
+			}
+		</script>
+    <script>
+    $('#menu_switch').click(function(){
+      $(".MenuBar").toggle(this.checked);
+    });
+    </script>
+
+  </body>
+</html>

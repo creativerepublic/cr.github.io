@@ -1,0 +1,286 @@
+.work-content{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+div.box{
+  /* height: 220px; */
+  overflow: hidden;
+}
+.box.show{
+	display: block;
+}
+
+.box{
+  margin: 0;
+  display: none;
+  float: left;
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+.box a{
+  margin:0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.workImg2{
+  width: 100%;
+  overflow: hidden;
+}
+
+.box:hover .workImg2{
+  position: absolute;
+}
+.box video{
+  transition: 0.4s;
+  object-fit: cover;
+  width: 100%;
+}
+
+.box:hover video{
+
+  transition: 0.4s;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transform: scale(1.25);
+}
+
+.box .project-title2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+.box:hover .project-title2{
+
+  opacity: 1;
+  transition: 1s;
+  background: rgba(15,15,15,0.8);
+}
+.project-title2 h3{
+  position: absolute;
+  bottom:-20%;
+  color: white;
+  font-size: 2.7em;
+}
+
+
+.box2.show{
+	display: block;
+}
+.box2{
+  margin: 0;
+  display: none;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.box2.who{
+  /* background: red; */
+}
+.box2.how{
+  /* background: green; */
+}
+.box2.why{
+  /* background: blue; */
+}
+.box2.what{}
+
+
+.CR_fish{
+  position:absolute;
+  top:20%;
+  left:-8%;
+  z-index:999;
+  width:42.5vw;
+}
+.CR_guy{
+  position:absolute;
+  top:8%;
+  left:-2%;
+  z-index:-999;
+  width:37.5vw;
+}
+/* .hashtag{
+  width: 770px;
+  top:400px;
+  left:465px;
+  position:absolute;
+} */
+/* .hashtag{
+  width: 45vw;
+  top:40%;
+  right:0;
+  position:absolute;
+} */
+.hashtag_m{
+  width: 37.5vw;
+  top:27.5%;
+  right:0;
+  position:absolute;
+}
+.hashtag{
+  position: absolute;
+  width: 0;
+  height:0;
+}
+/* .who_text{
+  width:480px;
+  top:520px;
+  left:720px;
+  position:absolute;
+} */
+.who_text{
+  width:32.5vw;
+  top:70%;
+  right:0;
+  position:absolute;
+}
+.who_text_m{
+  position: absolute;
+  width:0;
+  height:0;
+}
+.who_copy{
+  /* background-color: red; */
+  color: white;
+  width: 45%;
+  height: 25%;
+  position: relative;
+  top: 70%;
+  left: 20%;
+  font-family: "Roboto";
+  font-size: 1.3em;
+  src: url("/fonts/Roboto.ttf");
+}
+/* .why_text1{
+  width:520px;
+  top:420px;
+  left:640px;
+  position: absolute;
+}
+.why_text2{
+  width:520px;
+  top:580px;
+  left:640px;
+  position: absolute;
+} */
+.why_text1{
+  width:520px;
+  top:420px;
+  right:1%;
+  position: absolute;
+}
+.why_text2{
+  width:520px;
+  top:580px;
+  right:1%;
+  position: absolute;
+}
+.why_text2_m{
+  width: 0;
+  height:0;
+  position:absolute;
+}
+.why_bg{
+  position: absolute;
+  top:12.5%;
+  object-position: -12.5vw 0;
+}
+/* .how_text1{
+  width: 600px;
+  position:absolute;
+  top:340px;
+  left:590px;
+} */
+.how_text1{
+  width: 40vw;
+  position:absolute;
+  top:22.5%;
+  right:1%;
+}
+.how_text1_m{
+  position: absolute;
+  width:0;
+  height:0;
+}
+/* .how_text2{
+  width:260px;
+  position:absolute;
+  top:480px;
+  left:920px;
+}
+.how_text3{
+  width: 540px;
+  position:absolute;
+  top:540px;
+  left:680px;
+} */
+.how_text2{
+  width:25vw;
+  position:absolute;
+  top:55%;
+  right:1%;
+}
+.how_text3{
+  width: 35vw;
+  position:absolute;
+  top:62.5%;
+  right:1%;
+}
+.how_text3_m{
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.how_bg{
+  width: 100vw;
+  object-fit: cover;
+}
+.what_bg{
+  position: relative;
+  width: 1080px;
+}
+.what_bg_m{
+  width: 0;
+  height:0;
+  position:absolute;
+}
+
+.centerDiv{
+  width: 100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  cursor: none;
+}
+.centerDiv img{
+  cursor: none;
+}
+.filler-text{
+  opacity: 0;
+  width:500%;
+}
+.intro-CR_fish{
+  position:absolute;
+  width:70%;
+  left:35%;
+  top: 2.5%;
+}
+.intro-hashtag_m{
+  height: auto;
+  width:70%;
+  left:15%;
+  bottom: 10%;
+  position: absolute;
+}

@@ -1,0 +1,33 @@
+.CR_logo{
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+.ig-logo,.twitter-logo,.fb-logo,.ytube-logo{
+  position: absolute;
+  width: 10%;
+  height: auto;
+  left:5%;
+  cursor: url('/Imgs/cursor_h.png'),auto;
+}
+
+.ytube-logo{
+  bottom:15%;
+}
+.ig-logo{
+  bottom:11%;
+}
+.twitter-logo{
+  bottom:7%;
+}
+.fb-logo{
+  bottom:3%;
+}
+
+.copyright{
+  position: absolute;
+  height:320px;
+  bottom: 30;
+  right:0;
+  cursor: url('/Imgs/cursor.png'),auto;
+}

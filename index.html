@@ -1,52 +1,76 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="Imgs/logo_icon.ico"/>
-    <title>Creative Republic UG</title>
-		<script src="https://kit.fontawesome.com/ee0262a05a.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/main.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:1080px) and (min-width:800px)"  href="CSS/halfscreen.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:800px) and (min-width:540px)"  href="CSS/tablet.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Creative, Republic, #livecreative">
+    <meta name="description" content="Online showcase of Creative Republic UG portfolio">
+    <meta name="author" content="Creative Republic UG">
+    <title>Creative Republic UG -Testsite</title>
+    <link rel="stylesheet" type="text/css" href="CSS/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/logos.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/display.css"/>
+    <link rel="stylesheet" type="text/css" media="(max-width:960px)" href="CSS/mobile.css"/>
     <link rel="stylesheet" type="text/css" media="(max-width:540px)" href="CSS/mobile.css"/>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <main>
-      <div id="header">
-        <div class="topnav" id="myTopnav">
-                    <a href="index.html" class="logo" ><img src="Imgs/CR logo.png" alt=""></a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      <i class="fas fa-bars" style="font-size:2em"></i>
-                    </a>
-                    <a href="contact.html" class="menu">Contact</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-                </div>
-      </div>
-      <div class="header-separator">
+    <label class="toggle" >
+      <input type="checkbox" id="menu_switch"/>
+      <span class="slider"></span>
+    </label>
 
+    <div class="MenuBar">
+      <div class="topnav">
+        <a href="/work.html" class="menu">Our Work</a>
+        <a href="/about.html" class="menu">About Us</a>
+        <a href="/contact.html" class="menu">Contact</a>
       </div>
-      <div id="main">
-        <h1>Under Maintenance</h1>
-        <div class="site"></div>
+      <a href="/index.html" class="menu"><img class="CR_logo" src="Imgs/CR_logo.svg" alt=""></a>
+    </div>
+    <div class="MainBar">
+      <div class="content1">
+        <div class="intro">
+          <div class="centerDiv">
+
+            <img class="intro-hashtag_m" src="Imgs/hashtag_m.svg" alt="">
+            <video class="intro-CR_fish" src="Imgs/fish_loop_v2.webm" autoplay loop>
+          </div>
+        </div>
       </div>
-      <div id="footer">
-        <a href="https://www.instagram.com/creativerepublicug" target="_blank"><img id="ig-logo" src="Imgs/ig-logo.png" alt=""></a>
-        <a href="https://www.twitter.com/creativerepUG" target="_blank"><img id="twitter-logo" src="Imgs/twitter-logo.png" alt=""></a>
-        <a href="https://www.facebook.com/CreativeRepublicUG" target="_blank"><img id="fb-logo" src="Imgs/fb-logo.png" alt=""></a>
-        <a class="copyright">&#00169; <script>document.write(new Date().getFullYear())</script> Copyright Frontier Media Group</a>
+    </div>
+    <div class="SideBar">
+
+      <div id="myBtnContainer">
+            <a class="btn" href="tel:+256782699870">
+              <span class="checkmark"></span>
+              Call
+            </a>
+            <a class="btn" href="https://www.google.com/maps/dir//0.3179697,32.6227758/@0.3177363,32.6227327,20z/data=!4m2!4m1!3e0" target="_blank">
+              <span class="checkmark"></span>
+              Visit
+            </a>
+            <a class="btn" href="mailto:info@creativerepublic.ug" target="_blank">
+              <span class="checkmark"></span>
+              Email
+            </a>
       </div>
-    </main>
+
+      <img class="copyright" src="Imgs/copyright.svg" alt="">
+      <a href="https://www.instagram.com/creativerepublicug" target="_blank"><img class="ig-logo" src="Imgs/ig-logo.png" alt=""></a>
+      <a href="https://www.twitter.com/creativerepUG" target="_blank"><img class="twitter-logo" src="Imgs/twitter-logo.png" alt=""></a>
+      <a href="https://www.facebook.com/CreativeRepublicUG" target="_blank"><img class="fb-logo" src="Imgs/fb-logo.png" alt=""></a>
+      <a href="https://www.youtube.com/channel/UCTvfo23HNkZ_uptEZHQwuRg" target="_blank"><img class="ytube-logo" src="Imgs/ytube-logo.png" alt=""></a>
+    </div>
+
     <script>
-        function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-        x.className += " responsive";
-        } else {
-                x.className = "topnav";
-               }
-            }
+    $('#menu_switch').click(function(){
+      $(".MenuBar").toggle(this.checked);
+    });
     </script>
+
   </body>
+
 </html>
